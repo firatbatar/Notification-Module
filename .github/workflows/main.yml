@@ -17,6 +17,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4.2.1
         with:
+          distribution: 'corretto'
           java-version: '21'
           cache: 'gradle'
       - name: Run the tests
@@ -30,6 +31,7 @@ jobs:
       - name: Set up JDK
         uses: actions/setup-java@v4.2.1
         with:
+          distribution: 'corretto'
           java-version: '21'
           cache: 'gradle'
       - name: Run the linter
